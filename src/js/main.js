@@ -1,5 +1,6 @@
 // slides
-
+/*  Author: Yeager p1-19K
+Created: 07/04/2021  */
 
 let index = 0;
 

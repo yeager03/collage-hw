@@ -1,14 +1,13 @@
+
+body
+    background-color: #fffffe
+
 .header__sec
     display: flex
     justify-content: space-between
     padding-top: 67px
-    .search
-        width: 434px
-        height: 31px
-        margin: 6px 157px 6px 171px
-        padding: 5px 8px 4px 4px
-        border: solid 1px #e1e1e1
-        background-color: #ffffff
+    position: relative
+    // background-color: grey
     .money
         display: flex
         padding-top: 5px
@@ -24,6 +23,66 @@
             text-align: center
             color: #a1a1a1
 
+input[type = "checkbox"]
+    display: none
+
+.searchbox
+    position: absolute
+    left: 40%
+    top: 70px
+    transition: 0.5s
+    .text_of
+        width: 400px
+        height: 40px
+        background-color: transparent
+        border: none
+        border-radius: 30px
+        outline: none
+        font-size: 14px
+        padding-left: 10px
+        color: grey
+        box-shadow: -10px -10px 17px #edeff1, 10px 10px 15px #cacfd8
+        transition: 0.5s
+        opacity: 0
+        &:focus
+            box-shadow: -10px -10px 40px #edeff1, 10px 10px 40px #cacfd8
+
+    label
+        text-align: center
+        color: grey
+        font-size: 17px
+        cursor: pointer
+        transition: 0.5s
+
+        right: 0
+        position: absolute
+        width: 40px
+        height: 40px
+        line-height: 40px
+        border-radius: 50%
+        box-shadow: -5px -5px 8px #edeff1, 5px 5px 10px #cacfd8
+        &:hover
+            -10px -10px 15px #edeff1, 10px 10px 15px #cacfd8
+            transform: scale(1.1)
+
+#check
+    &:checked+.searchbox
+        width: 400px
+#check
+    &:checked+.searchbox
+        .text_of
+            opacity: 1
+#check
+    &:checked+.searchbox
+        label
+            box-shadow: none
+
+#check
+    &:checked+.searchbox
+        label
+            &:hover
+                transform: scale(1)
+
 .wrapper
     width: 1140px
     /* буду типо использовать как стандрат потому что нету авакода и это обязательно как контейнер */
@@ -32,12 +91,13 @@
     height: 40px
 
 .menu
+    padding-left: 0px
     margin-top: 24px
     display: flex
     justify-content: space-around
     padding-top: 9px
     padding-bottom: 9px
-    box-shadow: 1px 10px 6px 0 rgba(31, 27, 27, 0.08)
+    box-shadow: 1px 10px 10px 5px rgba(26, 23, 23, 0.08)
     background: url('../img/bg.jpg') center (center / cover) no-repeat
     a
         text-decoration: none
@@ -63,7 +123,7 @@
     margin-top: 0px
     min-width: 1280px
     min-height: 400px
-    padding: 50px 0px 34px 0px
+    padding: 60px 0px 34px 0px
     background: url('../img/bg.jpg') center (center / cover) no-repeat
     // background-color: #3ac1b3
 .slide
@@ -89,7 +149,7 @@
         p
             margin-top: 26px
             font-size: 17px
-            font-weight: 400
+            font-family: 'Open Sans', sans-serif
             font-stretch: normal
             font-style: normal
             line-height: 1.65
@@ -179,7 +239,7 @@ span
 
 .mini_slider
     min-height: 190px
-    background-color: #fff
+    background-color: #fffffe
     margin: 0px
     padding: 25px 0px 33px 0px
 
@@ -267,13 +327,118 @@ span
 .nextBTN
     display: none
 
-.sub_first
-    height: 70px
-    padding: 24px 0px 22px 0px
+.second
+    min-height: 730px
+    padding: 48px 0px 70px 70px
+    .shop
+        width: 250px
+        min-height: 260px
+        padding: 29px 0px 35px 0px
+        background-color: #ffffff
+        border: 1.7px solid #918e8e
+        border-radius: 5px
+        border-bottom: 5px solid #3cc395
+        margin-bottom: 45px
+        .images
+            display: block
+            margin: 0 auto
+        .text_box_title
+            display: block
+            margin: 0 auto
+            margin-top: 13px
+            font-size: 27px
+            font-family: 'Bebas Neue', cursive
+            font-stretch: normal
+            font-style: normal
+            letter-spacing: normal
+            text-align: center
+            color: #afafaf
+        .text_box_subtext
+            display: flex
+            justify-content: center
+            margin-top: 6px
+            button
+                display: block
+                width: 74px
+                height: 32px
+
+                border: none
+                border-radius: 5px
+                background-color: #3cc395
+                margin-left: 15px
+
+                font-size: 16px
+                font-family: 'Bebas Neue', cursive
+                font-stretch: normal
+                font-style: normal
+                text-align: center
+                color: #ffffff
+            .dollars
+
+                font-size: 22px
+                font-family: 'Bebas Neue', cursive
+                font-stretch: normal
+                font-style: normal
+                letter-spacing: normal
+                text-align: center
+                color: #a1a1a1
+
+.footer
+    min-height: 400px
+    background-color: #3cc3b5
+    padding: 42px 0px 21px 0px
+    .big_wrapper
+        display: flex
+        justify-content: space-between
+    .colone
+        text-align: left
+        .colone_title
+            text-align: left
+            a
+                text-decoration: none
+                font-size: 27px
+                font-family: 'Bebas Neue', cursive
+                font-stretch: normal
+                font-style: normal
+                letter-spacing: normal
+                text-align: left
+                color: #ffffff
+        .names
+            padding: 0
+            li
+                list-style-type: none
+                font-family: 'Open Sans', sans-serif
+                font-size: 15px
+                font-stretch: normal
+                font-style: normal
+                line-height: 1.87
+                letter-spacing: normal
+                text-align: left
+                color: #ffffff
+
+.copyright
+    height: 50px
+    padding: 10px 0px 10px 0px
+    background-color: #2da89b
+
+    font-family: 'Open Sans', sans-serif
+    font-size: 20px
+
+    font-stretch: normal
+    font-style: normal
+
+    letter-spacing: normal
+    text-align: center
+    color: #ffffff
+
+.mini
+    height: 64px
+    padding: 24px 0px 20px 0px
     background: url('../img/bg.jpg') center (center / cover) no-repeat
     .block
         font-family: 'Bebas Neue', cursive
-        font-size: 22px
+        font-size: 31px
+        font-weight: normal
         font-stretch: normal
         font-style: normal
         line-height: 0.81
