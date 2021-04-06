@@ -17,26 +17,32 @@
             margin-left: 17px
             margin-top: 2px
             font-size: 27px
-            font-weight: 600
+            font-family: 'Bebas Neue', cursive
             font-stretch: normal
             font-style: normal
             letter-spacing: normal
             text-align: center
             color: #a1a1a1
 
-.menu
+.wrapper
+    width: 1140px
+    /* буду типо использовать как стандрат потому что нету авакода и это обязательно как контейнер */
+    margin: 0 auto
+    position: relative
+    height: 40px
 
+.menu
     margin-top: 24px
     display: flex
-    justify-content: space-between
-    height: 40px
-    padding: 9px 10px 9px 10px
-    box-shadow: 0.5px 0.9px 3px 0 rgba(0, 0, 0, 0.08)
-    background-color: #4ccfc1
+    justify-content: space-around
+    padding-top: 9px
+    padding-bottom: 9px
+    box-shadow: 1px 10px 6px 0 rgba(31, 27, 27, 0.08)
+    background: url('../img/bg.jpg') center (center / cover) no-repeat
     a
         text-decoration: none
-        font-size: 16px
-        font-weight: 400
+        font-size: 22px
+        font-family: 'Bebas Neue', cursive
         font-stretch: normal
         font-style: normal
         letter-spacing: normal
@@ -46,17 +52,20 @@
     li
 
         list-style-type: none
-        padding-right: 14px
+        padding-right: 22px
         border-right: 2.5px solid white
+
         &:last-child
             border-right: none
+            padding-right: 0px
 
 .first
+    margin-top: 0px
     min-width: 1280px
-    min-height: 600px
-    padding: 82px 0px 73px 0px
+    min-height: 400px
+    padding: 50px 0px 34px 0px
     background: url('../img/bg.jpg') center (center / cover) no-repeat
-    /** background-color: #3ac1b3 **/
+    // background-color: #3ac1b3
 .slide
     display: none
 
@@ -71,8 +80,8 @@
         margin-left: 101px
         .title
             width: 445px
-            font-size: 50px
-            font-weight: 600
+            font-size: 70px
+            font-family: 'Bebas Neue', cursive
             letter-spacing: normal
             text-align: left
             color: #ffffff
@@ -89,7 +98,7 @@
             color: #ffffff
         .buy
             font-size: 20px
-            font-weight: 600
+            font-family: 'Bebas Neue', cursive
             font-stretch: normal
             font-style: normal
             letter-spacing: normal
@@ -97,7 +106,7 @@
             color: #ffffff
 
             display: block
-            width: 140px
+            width: 100px
             height: 40px
             margin-top: 32px
             padding: 4px
@@ -113,43 +122,13 @@
     position: relative
     margin-left: 90px
 
-.back
-    transform: rotate(180deg)
-    cursor: pointer
-    position: absolute
-    top: 40%
-    left: -5%
-    width: auto
-    height: auto
-    padding: 8px
-    background-color: #3ac1b3
-    font-size: 45px
-    transition: 0.5s ease
-    border-radius: 10px
+.dots_wrapper
+    display: block
+    margin: 0 auto
 
-    &:hover
-        background-color: #3cd3c4
-    .fas
-        color: white
+    margin-top: 40px
 
-.next
-
-    cursor: pointer
-    position: absolute
-    top: 40%
-    right: -15%
-    width: auto
-    height: auto
-    padding: 8px
-    background-color: #3ac1b3
-    font-size: 45px
-    transition: 0.5s ease
-    border-radius: 10px
-
-    &:hover
-        background-color: #3cd3c4
-    .fas
-        color: white
+    text-align: center
 
 span
     animation: fadeDot 2s
@@ -157,7 +136,7 @@ span
     height: 13px
     width: 13px
     margin: 0 2px
-    margin-top: 35px
+    margin-bottom: 0px
     background-color: white
     border-radius: 50%
     display: inline-block
@@ -197,3 +176,107 @@ span
 
     100%
         opacity: 1
+
+.mini_slider
+    min-height: 190px
+    background-color: #fff
+    margin: 0px
+    padding: 25px 0px 33px 0px
+
+.box
+    display: none
+
+.vidno
+    display: block
+
+.card
+    display: flex
+    justify-content: space-around
+    animation: fadeSlide 2s
+    .texts_card
+        margin-left: -77px
+        padding-top: 28px
+        .text_card
+            width: 82px
+            font-size: 30px
+            font-family: 'Bebas Neue', cursive
+            font-stretch: normal
+            font-style: normal
+            line-height: 0.83
+            letter-spacing: normal
+            text-align: left
+            color: #afafaf
+        button
+            display: block
+            width: 60px
+            height: 32px
+            margin-top: 15px
+
+            border: none
+            border-radius: 5px
+            background-color: #3cc395
+
+            font-size: 16px
+            font-family: 'Bebas Neue', cursive
+            font-stretch: normal
+            font-style: normal
+            text-align: center
+            color: #ffffff
+
+.activeCard
+
+.back
+    position: relative
+    i
+        transform: rotate(180deg)
+        cursor: pointer
+        position: absolute
+        top: -110px
+        right: 1110px
+        width: auto
+        height: auto
+        padding: 8px
+        color: #afafaf
+
+        font-size: 30px
+        transition: 0.5s ease
+        border-radius: 10px
+        &:hover
+            background-color: #49dbcd
+            color: white
+
+.next
+    position: relative
+    i
+        position: absolute
+        top: -110px
+        right: -1%
+        cursor: pointer
+        width: auto
+        height: auto
+        padding: 8px
+        color: #afafaf
+
+        font-size: 30px
+        transition: 0.5s ease
+        border-radius: 10px
+        &:hover
+            background-color: #49dbcd
+            color: white
+
+.nextBTN
+    display: none
+
+.sub_first
+    height: 70px
+    padding: 24px 0px 22px 0px
+    background: url('../img/bg.jpg') center (center / cover) no-repeat
+    .block
+        font-family: 'Bebas Neue', cursive
+        font-size: 22px
+        font-stretch: normal
+        font-style: normal
+        line-height: 0.81
+        letter-spacing: normal
+        text-align: left
+        color: #ffffff

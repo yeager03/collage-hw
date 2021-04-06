@@ -12,9 +12,12 @@
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:ital@1&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<div>
     <div class="container">
         <div class="header">
             <div class="header__sec">
@@ -31,7 +34,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="wrapper">
         <ul class="menu">
             <li class="sub_header_item"><a href="#" class="sub_links">HOME</a></li>
             <li class="sub_header_item"><a href="#" class="sub_links">SALE</a></li>
@@ -45,6 +48,7 @@
             <li class="sub_header_item"><a href="#" class="sub_links">CONTACT US</a></li>
         </ul>
     </div>
+
 
 
     <section class="first">
@@ -108,17 +112,91 @@
                     </div>
                 </div>
 
-                <a class="back"><i class="fas fa-chevron-right"></i></a>
-                <a class="next"><i class="fas fa-chevron-right"></i></a>
+
+                <div class="nextBTN"><i class="fas fa-chevron-right"></i></div>
+
+
 
             </div>
         </div>
-        <div class="dots_wrapper" style="display: block; margin: 0 auto; text-align: center;">
+        <div class="dots_wrapper">
             <span class="dot active"></span>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
+        </div>
+    </section>
+    <div class="mini_slider">
+
+        <div class="container">
+            <div class="card_wrapper">
+                <div class="box vidno">
+                    <div class="row">
+                        <div class="card col-md-6 col-lg-4">
+                            <div class="photo"><img src="../src/img/1.png" alt=""></div>
+                            <div class="texts_card">
+                                <div class="text_card">BRANDED SHOES</div>
+                                <button class="card_btn">SHOP</button>
+                            </div>
+                        </div>
+
+                        <div class="card  col-md-6 col-lg-4">
+                            <div class="photo"><img src="../src/img/2.png" alt=""></div>
+                            <div class="texts_card">
+                                <div class="text_card">BRANDED T-SHIRTS</div>
+                                <button class="card_btn">SHOP</button>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-6 col-lg-4">
+                            <div class=" photo"><img src="../src/img/3.png" alt=""></div>
+                            <div class="texts_card">
+                                <div class="text_card">BRANDED PANTS</div>
+                                <button class="card_btn">SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="row">
+                        <div class="card col-md-6 col-lg-4">
+                            <div class=" photo"><img src="../src/img/2.png" alt=""></div>
+                            <div class="texts_card">
+                                <div class="text_card">BRANDED SHOES</div>
+                                <button class="card_btn">SHOP</button>
+                            </div>
+                        </div>
+
+                        <div class="card  col-md-6 col-lg-4">
+                            <div class="photo"><img src="../src/img/1.png" alt=""></div>
+                            <div class="texts_card">
+                                <div class="text_card">BRANDED SHOES</div>
+                                <button class="card_btn">SHOP</button>
+                            </div>
+                        </div>
+
+                        <div class="card  col-md-6 col-lg-4">
+                            <div class="photo"><img src="../src/img/3.png" alt=""></div>
+                            <div class="texts_card">
+                                <div class="text_card">BRANDED SHOES</div>
+                                <button class="card_btn">SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="back"><i class="fas fa-chevron-right"></i></div>
+                <div class="next"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="sub_first">
+        <div class="container">
+            <div class="block">
+                FEATURED-PRODUCTS
+            </div>
         </div>
     </section>
 
@@ -137,11 +215,8 @@
 
 
 
-
-
-
-
     <script src="js/main.js"></script>
-</body>
+
+    </body>
 
 </html>
