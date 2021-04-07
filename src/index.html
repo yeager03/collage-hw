@@ -18,6 +18,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital@1&family=Titillium+Web:ital@1&display=swap"
             rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     </head>
     <!-- Author: Yeager p1-19K
 Created: 07/04/2021 -->
@@ -71,7 +72,7 @@ Created: 07/04/2021 -->
                             <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt
                                 is
                                 made of organic cotton and comes in a regular fit. </p>
-                            <button class="buy">SHOP NOW</button>
+                            <button data-modal class="buy">SHOP NOW</button>
                         </div>
                     </div>
 
@@ -83,7 +84,7 @@ Created: 07/04/2021 -->
                             <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt
                                 is
                                 made of organic cotton and comes in a regular fit. </p>
-                            <button class="buy">SHOP NOW</button>
+                            <button data-modal class="buy">SHOP NOW</button>
                         </div>
 
                     </div>
@@ -95,7 +96,7 @@ Created: 07/04/2021 -->
                             <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt
                                 is
                                 made of organic cotton and comes in a regular fit. </p>
-                            <button class="buy">SHOP NOW</button>
+                            <button data-modal class="buy">SHOP NOW</button>
                         </div>
                     </div>
 
@@ -106,7 +107,7 @@ Created: 07/04/2021 -->
                             <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt
                                 is
                                 made of organic cotton and comes in a regular fit. </p>
-                            <button class="buy">SHOP NOW</button>
+                            <button data-modal class="buy">SHOP NOW</button>
                         </div>
                     </div>
 
@@ -118,7 +119,7 @@ Created: 07/04/2021 -->
                                 armored plates of skin across its body. It is currently in the possession of Reiner
                                 Braun, although Gabi Braun is a candidate considered to inherit the power from him; her
                                 main rival, Falco Grice, would end up inheriting a different Titan power. </p>
-                            <button class="buy">SHOP NOW</button>
+                            <button data-modal class="buy">SHOP NOW</button>
                         </div>
                     </div>
 
@@ -147,7 +148,7 @@ Created: 07/04/2021 -->
                                 <div class="photo"><img src="../src/img/1.png" alt=""></div>
                                 <div class="texts_card">
                                     <div class="text_card">BRANDED SHOES</div>
-                                    <button class="card_btn">SHOP</button>
+                                    <button data-modal class="card_btn">SHOP</button>
                                 </div>
                             </div>
 
@@ -155,7 +156,7 @@ Created: 07/04/2021 -->
                                 <div class="photo"><img src="../src/img/2.png" alt=""></div>
                                 <div class="texts_card">
                                     <div class="text_card">BRANDED T-SHIRTS</div>
-                                    <button class="card_btn">SHOP</button>
+                                    <button data-modal class="card_btn">SHOP</button>
                                 </div>
                             </div>
 
@@ -163,7 +164,7 @@ Created: 07/04/2021 -->
                                 <div class=" photo"><img src="../src/img/3.png" alt=""></div>
                                 <div class="texts_card">
                                     <div class="text_card">BRANDED PANTS</div>
-                                    <button class="card_btn">SHOP</button>
+                                    <button data-modal class="card_btn">SHOP</button>
                                 </div>
                             </div>
                         </div>
@@ -172,26 +173,26 @@ Created: 07/04/2021 -->
                     <div class="box">
                         <div class="row">
                             <div class="card col-md-6 col-lg-4">
-                                <div class=" photo"><img src="../src/img/2.png" alt=""></div>
+                                <div class=" photo"><img src="../src/img/card2.png" alt=""></div>
                                 <div class="texts_card">
                                     <div class="text_card">BRANDED SHOES</div>
-                                    <button class="card_btn">SHOP</button>
+                                    <button data-modal class="card_btn">SHOP</button>
                                 </div>
                             </div>
 
                             <div class="card  col-md-6 col-lg-4">
-                                <div class="photo"><img src="../src/img/1.png" alt=""></div>
+                                <div class="photo"><img src="../src/img/card5.png" alt=""></div>
                                 <div class="texts_card">
                                     <div class="text_card">BRANDED SHOES</div>
-                                    <button class="card_btn">SHOP</button>
+                                    <button data-modal class="card_btn">SHOP</button>
                                 </div>
                             </div>
 
                             <div class="card  col-md-6 col-lg-4">
-                                <div class="photo"><img src="../src/img/3.png" alt=""></div>
+                                <div class="photo"><img src="../src/img/card1.png" alt=""></div>
                                 <div class="texts_card">
                                     <div class="text_card">BRANDED SHOES</div>
-                                    <button class="card_btn">SHOP</button>
+                                    <button data-modal class="card_btn">SHOP</button>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +222,11 @@ Created: 07/04/2021 -->
                             <div class="text_box_title">BRANDED SHOES</div>
                             <div class="text_box_subtext">
                                 <div class="dollars">$300</div>
-                                <button class="card_btn">BUY NOW</button>
+                                <a data-modal class="btnflip" href="#!">
+                                    <span class="btnflip-item btnflip__front">SHOP</span>
+                                    <span class="btnflip-item btnflip__center"></span>
+                                    <span class="btnflip-item btnflip__back">BUY NOW</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -232,7 +237,11 @@ Created: 07/04/2021 -->
                             <div class="text_box_title">BRANDED SHOES</div>
                             <div class="text_box_subtext">
                                 <div class="dollars">$300</div>
-                                <button class="card_btn">BUY NOW</button>
+                                <a data-modal class="btnflip" href="#!">
+                                    <span class="btnflip-item btnflip__front">SHOP</span>
+                                    <span class="btnflip-item btnflip__center"></span>
+                                    <span class="btnflip-item btnflip__back">BUY NOW</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -243,7 +252,11 @@ Created: 07/04/2021 -->
                             <div class="text_box_title">BRANDED SHOES</div>
                             <div class="text_box_subtext">
                                 <div class="dollars">$300</div>
-                                <button class="card_btn">BUY NOW</button>
+                                <a data-modal class="btnflip" href="#!">
+                                    <span class="btnflip-item btnflip__front">SHOP</span>
+                                    <span class="btnflip-item btnflip__center"></span>
+                                    <span class="btnflip-item btnflip__back">BUY NOW</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -254,7 +267,14 @@ Created: 07/04/2021 -->
                             <div class="text_box_title">BRANDED SHOES</div>
                             <div class="text_box_subtext">
                                 <div class="dollars">$300</div>
-                                <button class="card_btn">BUY NOW</button>
+
+                                <a data-modal class="btnflip" href="#!">
+                                    <span class="btnflip-item btnflip__front">SHOP</span>
+                                    <span class="btnflip-item btnflip__center"></span>
+                                    <span class="btnflip-item btnflip__back">BUY NOW</span>
+                                </a>
+
+
                             </div>
                         </div>
                     </div>
@@ -265,7 +285,11 @@ Created: 07/04/2021 -->
                             <div class="text_box_title">BRANDED SHOES</div>
                             <div class="text_box_subtext">
                                 <div class="dollars">$300</div>
-                                <button class="card_btn">BUY NOW</button>
+                                <a data-modal class="btnflip" href="#!">
+                                    <span class="btnflip-item btnflip__front">SHOP</span>
+                                    <span class="btnflip-item btnflip__center"></span>
+                                    <span class="btnflip-item btnflip__back">BUY NOW</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -276,7 +300,11 @@ Created: 07/04/2021 -->
                             <div class="text_box_title">BRANDED SHOES</div>
                             <div class="text_box_subtext">
                                 <div class="dollars">$300</div>
-                                <button class="card_btn">BUY NOW</button>
+                                <a data-modal class="btnflip" href="#!">
+                                    <span class="btnflip-item btnflip__front">SHOP</span>
+                                    <span class="btnflip-item btnflip__center"></span>
+                                    <span class="btnflip-item btnflip__back">BUY NOW</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -355,8 +383,30 @@ Created: 07/04/2021 -->
                 Copyright © 2021 Css
             </div>
         </footer>
-        <script src="js/main.js"></script>
 
+
+        <div class="modal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <form action="#">
+                        <div data-close class="modal__close">&times;</div>
+                        <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                        <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                        <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                        <!-- <button class="btn btn_dark btn_min">Оставить заявку на покупку</button> -->
+                        <div class="button">
+                            <a href="#">
+                                Отправить заявку на покупку
+                                <!-- <span class="shift"></span> -->
+                            </a>
+                            <div class="mask"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
         </body>
 
         </html>

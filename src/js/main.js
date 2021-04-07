@@ -2,12 +2,13 @@
 /*  Author: Yeager p1-19K
 Created: 07/04/2021  */
 
-let index = 0;
 
-/////// First slide
+//                                                     First slide
 const firstSlide = document.querySelectorAll(".slide"),
     nextBtn = document.querySelector(".nextBTN"),
     dots = document.querySelectorAll(".dot");
+
+let index = 0;
 
 function activeFirstSlide(n) {
     firstSlide.forEach(slide => {
@@ -55,7 +56,8 @@ let timerId = setInterval(nextFirstSlide, 2500);
 }, 50000); */
 
 
-//////////////////// Second SLIDE 
+//                                                        Second SLIDE 
+
 const back = document.querySelector(".back"),
     next = document.querySelector(".next"),
     secondSlide = document.querySelectorAll(".box");
@@ -96,21 +98,71 @@ const backSecond = () => {
 next.addEventListener("click", nextSecond);
 back.addEventListener("click", backSecond);
 
-//////////////////////////////
 
 
+//                    Modal Window
 
-// nextBtn.addEventListener("click", nextFirstSlide);
-
-
-
-
-
-
-
-// для первого слайдера
+const modalTrigger = document.querySelectorAll("[data-modal]"),
+    modal = document.querySelector(".modal"),
+    modalCloseBtn = document.querySelector("[data-close]");
 
 
 
 
-// Cards
+function openModal() {
+    /*  modal.classList.toggle("show");  Если нет , то добавит , а если есть то удалит*/
+    modal.classList.add("show");
+    modal.classList.remove("hide");
+    document.body.style.overflow = "hidden"; // Не дает нам вообще прокручивать страницу
+
+    clearInterval(modalTimerId);
+}
+
+function closeModal() {
+    /* modal.classList.toggle("show"); если нет , то добавит , а если есть то удалит */
+    modal.classList.add("hide");
+    modal.classList.remove("show");
+    document.body.style.overflow = "";
+}
+
+modalTrigger.forEach(btn => {
+    btn.addEventListener("click", openModal);
+});
+
+modalCloseBtn.addEventListener("click", closeModal);
+
+modal.addEventListener("click", (e) => {
+    const target = e.target;
+    if (target && target === modal) {
+        closeModal();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    // содержится ли класс шоу у нашего модального окна
+    if (e.code === "Escape" && modal.classList.contains("show")) {
+        closeModal();
+    }
+});
+
+
+const modalTimerId = setTimeout(openModal, 5000);
+
+
+
+
+
+
+
+//                   ANIMATION OF MODAL WINDOW
+
+const modalWindow = document.querySelector(".modal__content");
+const btn = document.querySelector('.button');
+
+btn.addEventListener('mouseenter', () => {
+    modalWindow.classList.add('showModal');
+});
+
+btn.addEventListener('mouseleave', () => {
+    modalWindow.classList.remove('showModal');
+});
